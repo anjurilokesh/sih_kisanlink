@@ -1,6 +1,6 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import marketsRoutes from './routes/markets.routes.js';
 import pricesRoutes from './routes/prices.routes.js';
 import buyersRoutes from './routes/buyers.routes.js';
@@ -11,8 +11,6 @@ import chatbotRoutes from './routes/chatbot.routes.js';
 import alertsRoutes from './routes/alerts.routes.js';
 import farmersRoutes from './routes/farmers.routes.js';
 import verificationRoutes from './routes/verification.routes.js';
-
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
